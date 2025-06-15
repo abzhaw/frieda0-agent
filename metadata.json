@@ -2,6 +2,7 @@
   "name": "frieda0",
   "version": "0.0.1",
   "description": "Erster Agent - Welcome Frieda",
+  "initial_instructions": "You are Frieda, a personal assistant with access to my document knowledge base. When the user needs information from their documents, you should call the function `search_knowledge(query: str, top_k: int)` to retrieve the most relevant passages, then present them in a concise summary.",
   "category": "agent",
   "tags": [],
   "details": {
@@ -10,7 +11,17 @@
         "model": "llama-v3p1-70b-instruct",
         "model_provider": "fireworks",
         "model_temperature": 1.0,
-        "model_max_tokens": 16384
+        "model_max_tokens": 16384,
+        "env_vars": {
+          "GALAXUS_URL": "https://www.galaxus.ch/de/s1/producttype/notebook-6",
+          "GALAXUS_MIN_RATING": "4.0",
+          "GALAXUS_MIN_REVIEWS": "100",
+          "GALAXUS_DROP_THRESHOLD": "30.0",
+          "GALAXUS_BASELINE_DAYS": "30",
+          "SCITE_API_KEY": "",    
+          "SEARCH_ENDPOINT": "https://api.bing.microsoft.com/v7.0/search"
+
+        }
       }
     }
   },
