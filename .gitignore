@@ -1,0 +1,12 @@
+# Virtual env
+.venv/
+
+# Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# OS artifacts
+.DS_Store
