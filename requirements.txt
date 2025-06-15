@@ -1,0 +1,4 @@
+nearai
+requests
+beautifulsoup4
+EOF
