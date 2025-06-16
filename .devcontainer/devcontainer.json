@@ -1,7 +1,8 @@
 {
   "name": "Frieda-Agent Dev Container",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
   "workspaceFolder": "/workspace",
   "settings": {

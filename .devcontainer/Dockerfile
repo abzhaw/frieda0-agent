@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /workspace
 
 # Copy only requirements first for better caching
-COPY requirements.txt ./
+COPY .devcontainer/requirements.txt requirements.txt
 RUN pip install --upgrade pip \
     && pip install -r requirements.txt
 
